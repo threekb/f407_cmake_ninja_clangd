@@ -1,0 +1,11 @@
+{
+    "clangd.arguments": [
+      "--compile-commands-dir=build",
+      "--background-index",
+      "--clang-tidy",
+      "--all-scopes-completion",
+      "--completion-style=detailed",
+      "--query-driver=C:/Toolchain/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe"
+    ],
+    "clangd.path": "D:/msys64/mingw64/bin/clangd.exe"
+}

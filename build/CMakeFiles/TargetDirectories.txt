@@ -1,0 +1,6 @@
+/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/CMakeFiles/f407_cmake_ninja_clangd.dir
+/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/CMakeFiles/edit_cache.dir
+/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/CMakeFiles/rebuild_cache.dir
+/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
