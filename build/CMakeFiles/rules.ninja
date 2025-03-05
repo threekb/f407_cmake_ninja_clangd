@@ -35,7 +35,7 @@ rule C_COMPILER__f407_cmake_ninja_clangd_unscanned_Debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__f407_cmake_ninja_clangd_Debug
-  command = $PRE_LINK && /c/Toolchain/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe $FLAGS -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/STM32F407XX_FLASH.ld" --specs=nano.specs -Wl,-Map=f407_cmake_ninja_clangd.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage -u _printf_float -lm $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /c/Toolchain/arm-gnu-toolchain-14.2.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe $FLAGS -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -T "/d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd/STM32F407XX_FLASH.ld" --specs=nano.specs -Wl,-Map=f407_cmake_ninja_clangd.map -Wl,--gc-sections -Wl,--start-group -lc -lm -Wl,--end-group -Wl,--print-memory-usage -u _printf_float -lm $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -62,7 +62,7 @@ rule C_COMPILER__STM32_Drivers_unscanned_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/bin/cmake.exe --regenerate-during-build -S/c/Users/Admin/Desktop/f407_cmake_ninja_clangd -B/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build
+  command = /usr/bin/cmake.exe --regenerate-during-build -S/d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd -B/d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd/build
   description = Re-running CMake...
   generator = 1
 

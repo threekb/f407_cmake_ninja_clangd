@@ -1,4 +1,4 @@
-# Install script for directory: /c/Users/Admin/Desktop/f407_cmake_ninja_clangd
+# Install script for directory: /d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/cmake/stm32cubemx/cmake_install.cmake")
+  include("/d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd/build/cmake/stm32cubemx/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/install_local_manifest.txt"
+  file(WRITE "/d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/c/Users/Admin/Desktop/f407_cmake_ninja_clangd/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/d/TUT/vscode-cmake-armgcc-clangd-ninja/f407_cmake_ninja_clangd/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
