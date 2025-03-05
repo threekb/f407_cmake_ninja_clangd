@@ -14,7 +14,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-unused-parameter")  # 忽略 C 代码�
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-parameter")  # 忽略 C++ 代码中未使用参数的警告
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ```
-1. 使用`arm-none-eabi-gdb`进行调试：
+5. 使用`arm-none-eabi-gdb`进行调试：
    - 在第一个终端中输入：
 ```bash
 openocd -f interface/cmsis-dap.cfg -f target/stm32f4x.cfg
