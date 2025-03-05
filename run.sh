@@ -9,8 +9,11 @@ rm -rf *
 cmake -G Ninja ..
 cmake --build . --target all --config Release -- -j 16
 
+# 获取当前工程所在的盘符
+drive_letter=$(pwd | cut -d'/' -f2 | tr '[:lower:]' '[:upper:]')
+
 # 修改 compile_commands.json 文件中的路径
-sed -i 's|/c/|C:/|g' compile_commands.json
+sed -i "s|/c/|${drive_letter}:|g" compile_commands.json
 
 # 获取 .ioc 文件的前缀
 ioc_file=$(basename ../*.ioc .ioc)

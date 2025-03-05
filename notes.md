@@ -1,6 +1,7 @@
 1. `llvm`、`clang`和`clangd`是通过`msys2`安装的。
 2. `.vscode`文件夹和`run.sh`脚本建议参考我的配置。
 3. cmake生成的`compile_commands.json`文件中，路径应该为`C:/`而不是`/c/`。
+   > 如果工程存放在别的盘，则修改为对应盘符即可（在Windows下，路径是需要经常注意的）
    - 这个问题可以通过`run.sh`脚本解决。
 4. 需要额外开启的一些编译参数：
    - 添加到`cmake/gcc-arm-none-eabi.cmake`文件中：
@@ -13,10 +14,12 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-unused-parameter")  # 忽略 C 代码�
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-parameter")  # 忽略 C++ 代码中未使用参数的警告
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ```
-5. 使用`arm-none-eabi-gdb`进行调试：
+1. 使用`arm-none-eabi-gdb`进行调试：
    - 在第一个终端中输入：
 ```bash
 openocd -f interface/cmsis-dap.cfg -f target/stm32f4x.cfg
+# 也可以直接
+openocd -f attach.cfg
 ```
    - 打开第二个终端，输入：
 ```bash
